@@ -3,7 +3,7 @@ function Footer() {
     <footer className="foot">
       <div className="wrap foot-grid">
         <div className="foot-brand">
-          <img src={(typeof window!=="undefined" && window.__resources && window.__resources.footerLogo) || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/69fc6826bc1f77cc35a769e5.webp"} alt="Uniwersytet Tradingu" style={{ objectFit: "contain", width: "100px", height: "100px" }} />
+          <img src={(typeof window!=="undefined" && window.__resources && window.__resources.footerLogo) || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/6a03161a7f9c717c7ca2d147.png"} alt="Uniwersytet Tradingu" style={{ objectFit: "contain", width: "100px", height: "100px" }} />
           <div>
             <div className="lg">DAMIAN KARBOWIAK</div>
             <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".22em", color: "var(--ink-faint)", marginTop: 4 }}>UNIWERSYTET TRADINGU · damiankarbowiak.pl</div>

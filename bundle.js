@@ -1119,7 +1119,7 @@ function Footer() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "foot-brand"
   }, /*#__PURE__*/React.createElement("img", {
-    src: typeof window !== "undefined" && window.__resources && window.__resources.footerLogo || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/69fc6826bc1f77cc35a769e5.webp",
+    src: typeof window !== "undefined" && window.__resources && window.__resources.footerLogo || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/6a03161a7f9c717c7ca2d147.png",
     alt: "Uniwersytet Tradingu",
     style: {
       objectFit: "contain",
