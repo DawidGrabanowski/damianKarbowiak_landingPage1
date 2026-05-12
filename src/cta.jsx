@@ -32,10 +32,12 @@ function CTA(){
               </div>
             </div>
 
-            <div className="cta-figure" aria-label="Zdjęcie autora">
-              <div className="ph">
-                Miejsce na zdjęcie<br/>pełnej sylwetki<br/>(profesjonalne tło)
-              </div>
+            <div className="cta-figure" aria-label="Okładka książki „To co porusza”">
+              <img
+                src={(typeof window!=="undefined" && window.__resources && window.__resources.bookCoverFull) || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/685943a2937ff430a41d00d6.png"}
+                alt="Okładka książki „To co porusza” — Damian Karbowiak"
+                style={{position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover"}}
+              />
               <div className="sig">
                 Damian K.
                 <span className="sub">AUTOR · UNIWERSYTET TRADINGU</span>

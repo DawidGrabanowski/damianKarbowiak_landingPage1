@@ -50,7 +50,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0}
+html,body{margin:0;padding:0;overflow-x:hidden}
 html{scroll-behavior:smooth}
 body{
   background: var(--bg);
@@ -400,6 +400,52 @@ section{position:relative}
 .hover-card-2 .av-name{font-size: 12px; color: var(--ink); font-weight:500}
 .hover-card-2 .av-role{font-family: var(--mono); font-size: 10px; color: var(--ink-faint); letter-spacing:.1em}
 .hover-card-2 .quote{font-family: var(--serif); font-style: italic; font-size: 13.5px; line-height:1.4; margin-top: 10px; color: var(--ink-dim)}
+
+/* ------- Hero — mobile (≤ 720px) ------- */
+@media (max-width: 720px){
+  .hero{ padding: 32px 0 48px; }
+  .hero-grid{ gap: 36px; }
+  .hero-left, .hero-right{ min-width: 0; }
+
+  .h-display{ font-size: clamp(30px, 8.5vw, 44px); line-height: 1.04; }
+  .hero-sub{ margin-top: 18px; font-size: 15px; line-height: 1.55; }
+
+  /* Form — full-width, stack email + button vertically */
+  .hero-form{ margin-top: 24px; max-width: 100%; }
+  .hero-form.two-row{ padding: 8px; gap: 6px; }
+  .hf-row{ flex-wrap: wrap; }
+  .hf-row input{ font-size: 16px; padding: 12px 12px; min-width: 0; flex: 1 1 100%; }
+  .hf-row .btn-primary{
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    margin-top: 4px;
+  }
+
+  .form-meta{ gap: 10px 14px; font-size: 11px; margin-top: 12px; }
+
+  .hero-stats{
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 20px 24px; margin-top: 36px; padding-top: 22px;
+  }
+  .hero-stats .num{ font-size: 26px; }
+
+  .book-stage{
+    aspect-ratio: auto;
+    width: 100%; max-width: 320px;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .book-tilt{ width: 58%; }
+
+  .hover-card, .hover-card-2{ display: none; }
+
+  .book-badges{ gap: 8px; font-size: 9px; letter-spacing: .14em; flex-wrap: wrap; }
+  .book-badges span{ padding: 5px 8px; }
+
+  .hero-pact{ margin-top: 60px; padding-top: 32px; }
+  .hero-pact p{ font-size: 18px; }
+}
 
 /* ------- Ticker ------- */
 .ticker-band{

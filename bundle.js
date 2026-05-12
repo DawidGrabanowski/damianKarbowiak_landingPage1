@@ -766,25 +766,18 @@ function Author() {
     className: "author-wrap"
   }, /*#__PURE__*/React.createElement("div", {
     className: "portrait reveal"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: typeof window !== "undefined" && window.__resources && window.__resources.authorPhoto || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/6974fdceeb392bbca20dc12f.jpeg",
+    alt: "Damian Karbowiak",
     style: {
-      display: "grid",
-      placeItems: "center",
-      gap: 14,
-      textAlign: "center",
-      padding: "0 30px",
-      position: "relative",
-      zIndex: 2
+      position: "absolute",
+      inset: 0,
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      objectPosition: "center top"
     }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: "var(--serif)",
-      fontSize: 22,
-      color: "var(--ink-dim)"
-    }
-  }, "Portret: Damian Karbowiak"), /*#__PURE__*/React.createElement("div", {
-    className: "ph-hint"
-  }, "Miejsce na profesjonalne", /*#__PURE__*/React.createElement("br", null), "zdj\u0119cie autora", /*#__PURE__*/React.createElement("br", null), "(proporcje 3:4)")), /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/React.createElement("div", {
     className: "quote-tag"
   }, "\u201EZamiast szuka\u0107 winnych \u2014 zapyta\u0142em siebie, co zrobi\u0142em \u017Ale. I zacz\u0105\u0142em od nowa, tym razem z g\u0142ow\u0105.\u201D", /*#__PURE__*/React.createElement("span", {
     className: "src"
@@ -936,10 +929,18 @@ function CTA() {
     d: "M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"
   })), /*#__PURE__*/React.createElement("span", null, "Jasna zasada")), /*#__PURE__*/React.createElement("p", null, "Zarabiamy na szkoleniach, nie na tym, \u017Ceby\u015B zap\u0142aci\u0142 za przesy\u0142k\u0119 dwa razy tyle, co ona kosztuje. ", /*#__PURE__*/React.createElement("b", null, "19,99 z\u0142 to pokrycie koszt\xF3w."), " Je\u015Bli ksi\u0105\u017Cka Ci\u0119 wci\u0105gnie i zechcesz uczy\u0107 si\u0119 dalej \u2014 porozmawiamy. Bez presji."))), /*#__PURE__*/React.createElement("div", {
     className: "cta-figure",
-    "aria-label": "Zdj\u0119cie autora"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "ph"
-  }, "Miejsce na zdj\u0119cie", /*#__PURE__*/React.createElement("br", null), "pe\u0142nej sylwetki", /*#__PURE__*/React.createElement("br", null), "(profesjonalne t\u0142o)"), /*#__PURE__*/React.createElement("div", {
+    "aria-label": "Ok\u0142adka ksi\u0105\u017Cki \u201ETo co porusza\u201D"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: typeof window !== "undefined" && window.__resources && window.__resources.bookCoverFull || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/685943a2937ff430a41d00d6.png",
+    alt: "Ok\u0142adka ksi\u0105\u017Cki \u201ETo co porusza\u201D \u2014 Damian Karbowiak",
+    style: {
+      position: "absolute",
+      inset: 0,
+      width: "100%",
+      height: "100%",
+      objectFit: "cover"
+    }
+  }), /*#__PURE__*/React.createElement("div", {
     className: "sig"
   }, "Damian K.", /*#__PURE__*/React.createElement("span", {
     className: "sub"

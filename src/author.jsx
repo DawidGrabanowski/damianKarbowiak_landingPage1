@@ -5,12 +5,11 @@ function Author(){
       <div className="wrap">
         <div className="author-wrap">
           <div className="portrait reveal">
-            <div style={{display:"grid",placeItems:"center",gap:14, textAlign:"center", padding:"0 30px", position:"relative", zIndex:2}}>
-              <div style={{fontFamily:"var(--serif)", fontSize:22, color:"var(--ink-dim)"}}>Portret: Damian Karbowiak</div>
-              <div className="ph-hint">
-                Miejsce na profesjonalne<br/>zdjęcie autora<br/>(proporcje 3:4)
-              </div>
-            </div>
+            <img
+              src={(typeof window!=="undefined" && window.__resources && window.__resources.authorPhoto) || "https://assets.cdn.filesafe.space/yB8EcAXY6HmJBLLJkMcE/media/6974fdceeb392bbca20dc12f.jpeg"}
+              alt="Damian Karbowiak"
+              style={{position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top"}}
+            />
             <div className="quote-tag">
               „Zamiast szukać winnych — zapytałem siebie, co zrobiłem źle. I zacząłem od nowa, tym razem z głową.”
               <span className="src">— DAMIAN KARBOWIAK</span>
